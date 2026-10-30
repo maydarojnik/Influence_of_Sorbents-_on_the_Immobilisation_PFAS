@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\geometry{margin=1in}
+
+\begin{document}
+
+\begin{table}[htbp]
+\centering
+\caption{Targeted PFAS Categorized by Functional Groups and Chain Lengths}
+\label{tab:target_pfas}
+\renewcommand{\arraystretch}{1.1}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.29\linewidth}>{\raggedright\arraybackslash}p{0.2\linewidth}p{6cm}}
+\toprule
+\textbf{Type of PFAS}& \textbf{Chemical Formula} & \hspace{0.75cm}\textbf{Physicochemical Features}\\
+\midrule
+\multicolumn{3}{l}{\textbf{Perfluoroalkyl Carboxylic Acids (PFCAs)}} \\
+\midrule
+\textbf{PFBA} \newline (Perfluorobutyric Acid) & $\text{C}_3\text{F}_7\text{COOH}$ \newline (Short-Chain)& Highly hydrophilic, with minimal affinity for carbon or mineral sorbents. \\
+\addlinespace
+\textbf{PFHxA} \newline (Perfluorohexanoic Acid) & $\text{C}_5\text{F}_{11}\text{COOH}$ \newline (Medium Chain)& Exhibits notable surface adsorption and wall retention. \\
+\addlinespace
+\textbf{PFOA} \newline (Perfluorooctanoic Acid) & $\text{C}_7\text{F}_{15}\text{COOH}$ \newline (Long-Chain)& Strong hydrophobic sorption on high surface area carbonaceous sorbents. \\
+\midrule
+\multicolumn{3}{l}{\textbf{Perfluoroalkane Sulfonic Acids (PFSAs)}} \\
+\midrule
+\textbf{PFBS} \newline (Perfluorobutanesulfonic Acid) & $\text{C}_4\text{F}_9\text{SO}_3\text{H}$ \newline (Short-Chain)& Allows direct comparison of sulfonate vs. carboxylate electrostatic behaviour. \\
+\addlinespace
+\textbf{PFHxS} \newline (Perfluorohexanesulfonate) & $\text{C}_6\text{F}_{13}\text{SO}_3\text{H}$ \newline (Medium-Chain)& High electrostatic and hydrophobic retention relative to PFHxA. \\
+\addlinespace
+\textbf{PFOS} \newline (Perfluorooctanesulfonate) & $\text{C}_8\text{F}_{17}\text{SO}_3\text{H}$ \newline (Long-Chain)& Highest hydrophobicity and the highest removal efficiency across all effective sorbents. \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\end{document}

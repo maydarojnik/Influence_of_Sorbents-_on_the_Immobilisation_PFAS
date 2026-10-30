@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[flushleft]{threeparttable}
+\geometry{margin=1in}
+
+\begin{document}
+
+\setcounter{table}{1}
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.1}
+\setlength{\tabcolsep}{4pt}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{threeparttable}
+\caption{Experimentally Used Organic and Inorganic Sorbents}
+\label{tab:sorbents}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.32\textwidth} c c p{0.5\textwidth}}
+\toprule
+\textbf{Sorbent} & \textbf{$S_{\text{BET}}$ ($\text{m}^2/\text{g}$)} & \textbf{$\text{pH}_{\text{PZC}}$} & \textbf{Mechanism \& Efficiency} \\
+\midrule
+\multicolumn{4}{l}{\textbf{Organic Sorbents, Carbonaceous}} \\
+\midrule
+\textbf{CNT}\textsuperscript{a} (Carbon Nanotubes) & $\ge 1200$ & $5.5\text{--}6.5$ & Hydrophobic adsorption + micropore filling $\rightarrow$ complete capture \\
+\addlinespace
+\textbf{BC}\textsuperscript{b} (Wood Biochar) & $\approx 525$ & $8.0\text{--}9.0$ & High surface area $\rightarrow$ high overall capacity \\
+\addlinespace
+\textbf{BC-TP}\textsuperscript{c} (Wood Biochar, 700\,°C) & $286$ & $8.5\text{--}9.2$ & Moderate microporosity $\rightarrow$ selective long-chain PFSA uptake (100\% PFOS) \\
+\addlinespace
+\textbf{BC-UK}\textsuperscript{d} (Wheat Straw, 700\,°C) & $189$ & $9.5\text{--}10.3$ & Alkaline ash repulsion $\rightarrow$ negligible removal \\
+\addlinespace
+\textbf{BC-TR} (Sludgechar, 600--650\,°C) & $44$ & $7.5\text{--}8.5$ & Low porosity \& reactivity $\rightarrow$ negligible removal \\
+\midrule
+\multicolumn{4}{l}{\textbf{Inorganic Sorbents, Mineral Phases}} \\
+\midrule
+\textbf{LDH}\textsuperscript{e} (Layered Double Hydroxide) & $\approx 90$ & $9.0\text{--}11.0$ & Anion exchange $\rightarrow$ high retention at neutral pH, poor at alkaline \\
+\addlinespace
+\textbf{FH} (2-line Ferrihydrite) & $\approx 300$ & $7.8\text{--}8.2$ & Protonated surface ($\text{pH} \approx 4.1$) $\rightarrow$ high long-chain PFSA uptake \\
+\addlinespace
+\textbf{AMO} (Amorphous $\text{MnO}_x$) & $\approx 180$ & $1.5\text{--}2.8$ & Permanent negative charge $\rightarrow$ strong electrostatic repulsion \\
+\addlinespace
+\textbf{Bir} (Birnessite, $\text{KMnO}_4\text{--HCl}$) & $\approx 65$ & $1.8\text{--}2.5$ & Very low $\text{pH}_{\text{PZC}}$ \& negative charge $\rightarrow$ strong electrostatic repulsion \\
+\addlinespace
+\textbf{Kaol} (Kaolinite, KGa-2) & $\approx 22$ & $4.5\text{--}5.5$ & Negative basal planes $\rightarrow$ poor anionic PFAS affinity \\
+\addlinespace
+\textbf{Goe} (Goethite) & $\approx 45$ & $\approx 6.0$ & Hydrophilic surface $\rightarrow$ negligible removal \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Note: $S_{\text{BET}}$ = Brunauer--Emmett--Teller specific surface area; $\text{pH}_{\text{PZC}}$ = point of zero charge.\par
+\noindent\textsuperscript{a}TUBALL\texttrademark; \textsuperscript{b}NATURE CARBON (ENERGO Zlat\'{a} Ole\v{s}nice s.r.o.); \textsuperscript{c}Carbon Terra GmbH; \textsuperscript{d}UK Biochar Research Centre (UKBRC); \textsuperscript{e}PURAL MG 70.
+\end{tablenotes}
+\end{threeparttable}%
+}
+\end{table}
+
+\end{document}
